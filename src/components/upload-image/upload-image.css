@@ -1,5 +1,4 @@
-.upload-image-container,
-.upload-image-container-dragging {
+.upload-image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,13 +8,14 @@
   height: 80%;
 
   border-radius: 6px;
-  border: 1px dashed #707070;
+  border: 2px dashed #707070;
 
   margin-right: 47px;
 }
 
-.upload-image-container-dragging {
-  opacity: 0.6;
+.upload-image-container.dragging {
+  border: 2px dashed #007bff;
+  background-color: #f0f0f0;
 }
 
 .upload-image__image {
@@ -27,6 +27,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* transition: background-color 0.3s ease; */
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+  /* border-radius: 5px; */
 }
 
 .upload-image__label {
@@ -58,4 +61,8 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.upload-image__button:hover {
+  background-color: #0056b3;
 }

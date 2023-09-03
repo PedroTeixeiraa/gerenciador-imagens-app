@@ -1,19 +1,17 @@
 import React, { useRef, useState } from 'react';
 import image from "../../images/upload-image.png"
-import api from '../../api/api'
 
 import './upload-image.css'
 
-const UploadImage = () => {
+const UploadImage = ({ handleImageUpload }) => {
   const [isDragging, setIsDragging] = useState()
 
   const fileInputRef = useRef()
 
   const handleDrop = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     const file = e.dataTransfer.files[0]
     setIsDragging(false)
-    // setImageSrc(URL.createObjectURL(file));
     handleImageUpload(file)
   }
 
@@ -26,24 +24,7 @@ const UploadImage = () => {
     setIsDragging(true)
   }
 
-  const handleImageUpload = async (file) => {
-    console.log(file, 'file')
-    // setProgress(100);
-    // const formData = new FormData()
-    // formData.append('file', file)
-
-    // await api.post("/upload", formData, {
-    //   headers: {
-    //     'Content-Type': 'multipart/form-data',
-    //   },
-    // })
-
-    // setTimeout(() => {
-    //   setPreviewImage(null)
-    // }, 2000)
-  }
-
-  const classNameContainer = `upload-image-container${isDragging ? '-dragging' : ''}`
+  const classNameContainer = `upload-image-container ${isDragging ? 'dragging' : ''}`
 
   return (
     <div
