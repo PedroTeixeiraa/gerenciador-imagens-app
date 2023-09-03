@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Gerenciador de Imagens
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+![Gravação de tela de 03-09-2023 14_29_51 (online-video-cutter com)](https://github.com/PedroTeixeiraa/gerenciador-imagens-app/assets/54821438/30f944c8-e0c5-4322-8908-429e7c1d809f)
 
-### `npm start`
+Este é um projeto React que permite aos usuários fazer o upload de imagens para um servidor usando uma API personalizada. O objetivo principal deste projeto é demonstrar como realizar o upload de imagens e integrar-se com uma API para armazenamento e gerenciamento de arquivos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades Principais
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Fazer upload de imagens para o servidor.
+- Visualizar as imagens enviadas.
+- Integrar-se com uma API para processar e armazenar as imagens.
 
-### `npm test`
+## Pré-requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Antes de começar, certifique-se de que você tenha instalado o `Node.js` e o `npm` em sua máquina. Você também precisará da URL da API para configurar a integração.
 
-### `npm run build`
+## Configuração
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone este repositório para o seu ambiente local:
+    ```
+      git clone https://github.com/PedroTeixeiraa/gerenciador-imagens-app
+      cd gerenciador-imagens-app
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Instale as dependências do projeto:
+    ```
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Configure a URL da API:
 
-### `npm run eject`
+    ```
+    No arquivo `src/api/api.js`, substitua `baseURL` pela URL real da sua API de upload de imagens.
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Execução
+Após a configuração, você pode iniciar o projeto localmente:
+  ```
+  npm start
+  ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O aplicativo será executado em http://localhost:3000 no seu navegador.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribuições
+Sinta-se à vontade para contribuir para este projeto. Você pode criar problemas (issues) ou enviar solicitações de pull requests para melhorar a funcionalidade.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licença
+Este projeto é licenciado sob a [MIT LICENSE](https://github.com/PedroTeixeiraa/gerenciador-imagens-app/blob/master/LICENSE).
